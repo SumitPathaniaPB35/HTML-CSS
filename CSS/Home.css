@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* ############## Html Element Styling ############## */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+/* ################# Utility Classes ################ */
+.button{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0; 
+}
+.button-primary{
+    background-color: #fff;
+    border-radius: 100px;
+}
+.button-primary:hover{
+    background: #ddd;
+}
+.button-secondary{
+    border: 2px solid #e93946;
+    border-radius: 100px;
+}
+.button-secondary:hover{
+    background: #fcf3f2;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e93946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.bg-blue{
+    background-color:#263238;
+}
+/* ############## Header Styling ############## */
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/Tokyo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    padding: 1rem;
+}
+.navbar .logo{
+    float: left;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+.navbar a:hover{
+    border-bottom: 1px solid #fff;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ################## Header Content Styling ################ */
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+/* ################ Showcase Section Styling ############### */
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row1 .text-box, .row2 .img-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    height: 100%;
+    padding: 3rem;
+    background: #fff;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row .text-box h2{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ################# Last Content ################# */
+.features{
+    padding: 10rem 0;
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgba(102,102,102,0.521);
+}
+.box{
+    width: 33.3333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box3, .box1{
+    background-color: #263238;
+}
+.box2{
+    background-color: #e93946;
+}
+.box-wrapper h2{
+    text-transform: uppercase;
+}
+/* ################ Footer #################### */
+.footer{
+    background-color: #263238;
+    padding: 4rem;
+    text-align: center;
+}
+.link-2{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.last-line{
+    padding-top: 2rem;
+}
+/* ################ About Page Styling ############## */
+.about{
+    padding-top: 5rem;
+    padding-bottom: 0%;
+    border-bottom: 6px solid #e93946;
+}
+.main-content{
+    padding-top: 1.5rem;
+}
+.list-items1{
+    margin-top: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-weight: 500;
+}
+.main-content .ul-1{
+    float: left;
+    text-align: center;
+
+}
+.main-content .ul-2{
+    float: right;
+    text-align: center;
+ }
+.stats{
+    margin-top: 15rem;
+    text-align: center;
+    font-weight: 700;
+}
+.stat-1{
+    width: 25%;
+    float: left;
+}
+.stat-2{
+    width: 25%;
+    float: left;
+}
+.stat-3{
+    width: 25%;
+    float: left;
+}
+.stat-4{
+    width: 25%;
+    float: left;
+}
+.box-contact{
+    background-color: #e93946;
+    margin-top: 24rem;
+    padding: 1rem;
+    height: 6rem;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+
+
+}
+.contact-text{
+    float:left;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.contact-us{
+    float:right;
+    border: 2px solid #f4f4f4;
+    padding: 0 4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+/* ################ Contact Page Styling ################# */
+.contact-form{
+    padding:5rem 0;
+    background-color: #f7f7f7;   
+}
+.contact-form::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.company-address{
+    float: left;
+    width: 49%;
+    padding: 1rem;
+    background-color: #fff;
+    height:760px;
+    
+}
+.form{
+    font-size: 1.6rem;
+    float: right;
+    width: 49%;
+    background-color: #fff;
+    padding: 1rem;
+    height: 760px;
+}
+.address-padding{
+    padding-bottom: 2rem;
+}
+.office-img{
+    width:50rem;
+    height: 35rem;
+    
+    object-fit: cover;
+    object-position: right;
+}
+.body-1{
+    background-color: #f7f7f7;
+}
+.form h1::after{
+    content: "";
+    display: block;
+    border: 3px solid #ee4758;
+    width: 80%;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: "*";
+    color: #ee4758;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 250px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+@media(max-width:500px){
+    html{
+        font-size:8px;
+    }
+    .nav-bar .nav-items , .navbar .logo{
+        float:none;
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+    .header-content .main-heading{
+        display:none;
+    }
+}
